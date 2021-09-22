@@ -49,6 +49,8 @@ I worked on this by myself!
 
 I learned how to create a basic React Native mobile app, how to use Redux to implement a state management system within a React Native app, and how to apply styling through the linear gradient library. All three of my mini-hacks worked well, and I had fun implementing them! This will certainly be useful groundwork for any CS98 project which decides to go down the mobile route (which I imagine will be many)!
 
+The only thing I struggled to get working was simulating the app on my iPhone. I do not have a Mac, so running Xcode was not an option. I got the first project to work on my phone using tunneling and the Expo app, but was unable to get the second and third projects to simulate. Thus, I used the web simulation and a mobile formatting to test these latter projects!
+
 ## Authors
 
 Quinn Spraut - quinn.a.spraut.22@dartmouth.edu
