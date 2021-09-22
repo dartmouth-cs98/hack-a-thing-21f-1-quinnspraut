@@ -43,7 +43,7 @@ function ListView() {
           )}
         />
       ) : (
-        <Text style={{ fontSize: 30 }}>Your list is empty :'(</Text>
+        <Text style={{ fontSize: 30 }}>All tasks completed!</Text>
       )}
     </View>
   )
@@ -53,7 +53,7 @@ function ListScreen({ navigation }) {
     <>
       <StatusBar barStyle='light-content' />
       <View style={styles.container}>
-        <Header title={'List'} />
+        <Header title={'To-Do List'} />
         <ListView />
         <View style={styles.fabContainer}>
           <TouchableOpacity
@@ -69,7 +69,7 @@ function ListScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'blue'
+    backgroundColor: 'purple'
   },
   fabContainer: {
     justifyContent: 'flex-end',
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     bottom: 20
   },
   fabButton: {
-    backgroundColor: 'blue',
+    backgroundColor: 'purple',
     borderRadius: 35,
     width: 70,
     height: 70,

@@ -24,11 +24,11 @@ function ModalScreen({ navigation }) {
           <TouchableOpacity
             style={styles.closeButton}
             onPress={() => navigation.goBack()}>
-            <Ionicons name='ios-close' color='#101010' size={40} />
+            <Ionicons name='close' color='#101010' size={40} />
           </TouchableOpacity>
         </View>
         <View style={styles.modalContainer}>
-          <Text style={{ color: '#444', fontSize: 20 }}>What do you want to do?</Text>
+          <Text style={{ color: '#444', fontSize: 20 }}>New Task Title:</Text>
           <TextInput
             style={{
               height: 50,
@@ -45,7 +45,7 @@ function ModalScreen({ navigation }) {
           <TouchableOpacity
             style={{
               marginTop: 10,
-              backgroundColor: 'blue',
+              backgroundColor: 'purple',
               width: 50,
               height: 50,
               alignItems: 'center',
@@ -53,7 +53,7 @@ function ModalScreen({ navigation }) {
               borderRadius: 5
             }}
             onPress={() => onSaveNote(value)}>
-            <Ionicons name='ios-arrow-dropright-circle' size={40} color='#fff' />
+            <Ionicons name='ios-add' size={40} color='#fff' />
           </TouchableOpacity>
         </View>
       </View>
@@ -79,7 +79,8 @@ const styles = StyleSheet.create({
   closeButtonContainer: {
     position: 'absolute',
     alignItems: 'flex-end',
-    right: 10
+    right: 10,
+    zIndex: 2
   },
   closeButton: {
     backgroundColor: '#d3d3d3',
@@ -94,9 +95,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',
-    margin: 60,
-    top: 10,
-    left: 50
+    width: '100%',
+    marginTop: 20,
+    zIndex: 1
   }
 })
 export default ModalScreen
